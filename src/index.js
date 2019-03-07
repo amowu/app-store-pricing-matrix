@@ -262,4 +262,8 @@ class AppStorePricingMatrix {
   }
 }
 
+AppStorePricingMatrix.findBy = AppStorePricingMatrix.findBy.bind(
+  AppStorePricingMatrix
+);
+
 export default AppStorePricingMatrix;
