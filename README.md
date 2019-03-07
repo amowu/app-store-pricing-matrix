@@ -341,19 +341,17 @@ Returns **[FlattenedTier](#flattenedtier)** The pricing information.
 
 The pricing matrix JSON is taken from Apple's hidden API at the following URL.
 
-```
-https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/apps/#{AppStoreID}/pricing/matrix
-```
+    https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/apps/#{AppStoreID}/pricing/matrix
 
 The URL is accessible when you are logged in to Apple Connect with your browser.
 
 When you need to update the pricing matrix,
 
-1. Login to Apple Connect with your developer account.
-2. Enter any App Store ID that you own.
-3. Your default browser will launch and load the JSON. Copy the entire content and paste into `input/pricing_matrix.json`.
-4. Run `npm test` to check if anything is broken.
-5. Send a pull request with updated `input/pricing_matrix.json`.
+1.  Login to Apple Connect with your developer account.
+2.  Enter any App Store ID that you own.
+3.  Your default browser will launch and load the JSON. Copy the entire content and paste into `input/pricing_matrix.json`.
+4.  Run `npm test` to check if anything is broken.
+5.  Send a pull request with updated `input/pricing_matrix.json`.
 
 ## Reference
 
