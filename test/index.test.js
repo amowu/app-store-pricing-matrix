@@ -1,16 +1,16 @@
-import AppStorePricingMatrix from "../src";
+import { countries, currencies, findBy, stems } from "../src";
 
 test("#stems", () => {
   const nonAlternateStems = Array.from(Array(88).keys()).map(String);
   const alternateStems = ["510", "530", "550", "560", "570", "580", "590"];
 
-  const stems = [...nonAlternateStems, ...alternateStems];
+  const expectedStems = [...nonAlternateStems, ...alternateStems];
 
-  expect(AppStorePricingMatrix.stems).toEqual(stems);
+  expect(stems).toEqual(expectedStems);
 });
 
 test("#countries", () => {
-  const countries = [
+  const expectedCountries = [
     "HK",
     "PT",
     "HN",
@@ -93,11 +93,11 @@ test("#countries", () => {
     "PL"
   ];
 
-  expect(AppStorePricingMatrix.countries).toEqual(countries);
+  expect(countries).toEqual(expectedCountries);
 });
 
 test("#currencies", () => {
-  const currencies = [
+  const expectedCurrencies = [
     "HKD",
     "EUR",
     "USD",
@@ -145,11 +145,11 @@ test("#currencies", () => {
     "PLN"
   ];
 
-  expect(AppStorePricingMatrix.currencies).toEqual(currencies);
+  expect(currencies).toEqual(expectedCurrencies);
 });
 
 test("#findBy", () => {
-  const tierUS0 = AppStorePricingMatrix.findBy({
+  const tierUS0 = findBy({
     tier: "0",
     country: "US"
   });
@@ -160,7 +160,7 @@ test("#findBy", () => {
   expect(tierUS0.retailPrice).toEqual(0);
   expect(tierUS0.wholesalePrice).toEqual(0);
 
-  const tierUS1 = AppStorePricingMatrix.findBy({
+  const tierUS1 = findBy({
     tier: "1",
     country: "US"
   });
@@ -171,7 +171,7 @@ test("#findBy", () => {
   expect(tierUS1.retailPrice).toEqual(0.99);
   expect(tierUS1.wholesalePrice).toEqual(0.7);
 
-  const tierTW1 = AppStorePricingMatrix.findBy({
+  const tierTW1 = findBy({
     tier: "1",
     country: "TW"
   });
@@ -182,7 +182,7 @@ test("#findBy", () => {
   expect(tierTW1.retailPrice).toEqual(30);
   expect(tierTW1.wholesalePrice).toEqual(20);
 
-  const tierMY1 = AppStorePricingMatrix.findBy({
+  const tierMY1 = findBy({
     tier: "1",
     country: "MY"
   });
