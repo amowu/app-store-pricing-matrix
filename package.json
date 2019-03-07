@@ -1,6 +1,6 @@
 {
   "name": "app-store-pricing-matrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple module that holds currencies and prices from the Apple's iOS App Store.",
   "license": "MIT",
   "repository": "amowu/app-store-pricing-matrix",
