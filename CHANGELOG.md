@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/amowu/app-store-pricing-matrix/compare/v1.0.4...v1.0.5) (2019-03-07)
+
+
+### Bug Fixes
+
+* abort ES6 class ([1768cf6](https://github.com/amowu/app-store-pricing-matrix/commit/1768cf6))
+
+
+
 ## [1.0.4](https://github.com/amowu/app-store-pricing-matrix/compare/v1.0.3...v1.0.4) (2019-03-07)
 
 

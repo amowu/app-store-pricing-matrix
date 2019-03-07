@@ -55,18 +55,17 @@ console.log(pricing.fWholesalePrice); // => "$ 0.70"
     -   [Properties](#properties-1)
 -   [FlattenedTier](#flattenedtier)
     -   [Properties](#properties-2)
--   [AppStorePricingMatrix](#appstorepricingmatrix)
-    -   [tiers](#tiers)
-        -   [Examples](#examples)
-    -   [stems](#stems)
-        -   [Examples](#examples-1)
-    -   [countries](#countries)
-        -   [Examples](#examples-2)
-    -   [currencies](#currencies)
-        -   [Examples](#examples-3)
-    -   [findBy](#findby)
-        -   [Parameters](#parameters)
-        -   [Examples](#examples-4)
+-   [tiers](#tiers)
+    -   [Examples](#examples)
+-   [stems](#stems)
+    -   [Examples](#examples-1)
+-   [countries](#countries)
+    -   [Examples](#examples-2)
+-   [currencies](#currencies)
+    -   [Examples](#examples-3)
+-   [findBy](#findby)
+    -   [Parameters](#parameters)
+    -   [Examples](#examples-4)
 
 ### PricingInfo
 
@@ -108,15 +107,11 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 -   `tierStem` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The stem of tier, e.g. `"1"`.
 -   `wholesalePrice` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** The wholesale price, e.g. `0.70`.
 
-### AppStorePricingMatrix
-
-Class representing a App Store Pricing Matrix.
-
-#### tiers
+### tiers
 
 Get all items of tier.
 
-##### Examples
+#### Examples
 
 ```javascript
 // returns
@@ -230,11 +225,11 @@ AppStorePricingMatrix.tiers;
 
 Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Tier](#tier)>** An array
 
-#### stems
+### stems
 
 Get all stems of tier.
 
-##### Examples
+#### Examples
 
 ```javascript
 // returns ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "510", "530", "550", "560", "570", "580", "590"]
@@ -243,11 +238,11 @@ AppStorePricingMatrix.stems;
 
 Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** An array of tier stems.
 
-#### countries
+### countries
 
 Get all country code of tier.
 
-##### Examples
+#### Examples
 
 ```javascript
 // returns ["HK", "PT", "HN", "PY", "HR", "HU", "QA", "ID", "IE", "IL", "AE", "IN", "ZA", "IS", "AL", "IT", "AM", "AR", "AT", "AU", "RO", "RU", "BE", "BG", "JP", "BH", "BO", "SA", "BR", "SE", "SG", "SI", "BY", "SK", "CA", "SV", "CH", "KR", "CL", "CN", "CO", "CR", "KZ", "TH", "CY", "CZ", "TR", "DE", "TW", "TZ", "DK", "LT", "LU", "LV", "DO", "UA", "EC", "US", "EE", "EG", "MT", "MX", "MY", "ES", "VN", "NG", "NI", "NL", "NO", "FI", "NZ", "FR", "GB", "GR", "GT", "PA", "PE", "PH", "PK", "PL"]
@@ -256,11 +251,11 @@ AppStorePricingMatrix.countries
 
 Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** An array of country code.
 
-#### currencies
+### currencies
 
 Get all currency code of tier.
 
-##### Examples
+#### Examples
 
 ```javascript
 // returns ["HKD", "EUR", "USD", "HRK", "HUF", "QAR", "IDR", "ILS", "AED", "INR", "ZAR", "AUD", "RON", "RUB", "BGN", "JPY", "SAR", "BRL", "SEK", "SGD", "CAD", "CHF", "KRW", "CLP", "CNY", "COP", "KZT", "THB", "CZK", "TRY", "TWD", "TZS", "DKK", "EGP", "MXN", "MYR", "VND", "NGN", "NOK", "NZD", "GBP", "PEN", "PHP", "PKR", "PLN"]
@@ -269,17 +264,17 @@ AppStorePricingMatrix.currencies
 
 Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** An array of currency code.
 
-#### findBy
+### findBy
 
 Find pricing information by country code and tier stem.
 
-##### Parameters
+#### Parameters
 
 -   `pricing` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
     -   `pricing.country` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The country code, e.g. `"TW"`, `"US"`, `"MY"`.
     -   `pricing.tier` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The stem of tier.
 
-##### Examples
+#### Examples
 
 "Tier 1" for USA
 
