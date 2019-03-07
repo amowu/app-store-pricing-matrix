@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/amowu/app-store-pricing-matrix/compare/v1.0.2...v1.0.3) (2019-03-07)
+
+
+### Bug Fixes
+
+* findBy is not a function ([d077288](https://github.com/amowu/app-store-pricing-matrix/commit/d077288))
+
+
+
 ## [1.0.2](https://github.com/amowu/app-store-pricing-matrix/compare/v1.0.1...v1.0.2) (2019-03-07)
 
 
