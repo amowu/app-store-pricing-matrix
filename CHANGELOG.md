@@ -1,3 +1,12 @@
+## [1.0.6](https://github.com/amowu/app-store-pricing-matrix/compare/v1.0.5...v1.0.6) (2019-03-12)
+
+
+### Bug Fixes
+
+* fails to minify ([cb41501](https://github.com/amowu/app-store-pricing-matrix/commit/cb41501))
+
+
+
 ## [1.0.5](https://github.com/amowu/app-store-pricing-matrix/compare/v1.0.4...v1.0.5) (2019-03-07)
 
 
