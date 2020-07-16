@@ -46,7 +46,7 @@
     "app-store-pricing-matrix"
   ],
   "dependencies": {
-    "lodash": "4.17.11"
+    "lodash": "4.17.19"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
